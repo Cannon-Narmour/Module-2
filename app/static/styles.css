@@ -1,0 +1,49 @@
+.logo {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.everest {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.indextitle {
+  position: absolute;
+  font-family: "Noto Serif", serif;
+  margin-left: 5rem;
+  margin-block: -3.5em;
+  font-size: 50px;
+  color: #613913;
+}
+.outer {
+  height: 84px;
+  margin-left: 100px;
+}
+
+.team_list ul li a {
+  display: table;
+  margin: 0 auto;
+  float: left;
+  font-size: 20px;
+  font-family: "Noto Serif", serif;
+  text-decoration: none;
+  list-style: none;
+  color: #613913;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+ul#list {
+  display: inline;
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+ul#list li {
+  display: inline;
+}
