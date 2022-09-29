@@ -1,0 +1,13 @@
+{%extends 'base.html'%} {%block content%}
+<h1 class="indextitle">Leadership Teams</h1>
+<div class="outer">
+  <div class="team_list">
+    {%for team in lp%}
+    <ul>
+      <li><a href="/{{team}}">{{team}}</a></li>
+    </ul>
+    {%endfor%}
+  </div>
+</div>
+
+{%endblock content%}

@@ -8,8 +8,8 @@
 
 .everest {
   background-size: cover;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .indextitle {
@@ -26,9 +26,7 @@
 }
 
 .team_list ul li a {
-  display: table;
   margin: 0 auto;
-  float: left;
   font-size: 20px;
   font-family: "Noto Serif", serif;
   text-decoration: none;
@@ -36,14 +34,30 @@
   color: #613913;
   padding-left: 5%;
   padding-right: 5%;
+  flex-direction: row;
+  position: relative;
+  max-width: 10% !important;
 }
 
-ul#list {
-  display: inline;
-  min-width: 696px;
+.team_list ul li a {
   list-style: none;
   padding-top: 20px;
 }
-ul#list li {
-  display: inline;
+.team_list ul li {
+  display: inline-block;
+}
+
+.text {
+  margin-top: -10rem;
+  color: #613913;
+  font-size: 45px;
+}
+
+.list {
+  text-align: center;
+  background-color: #82d2f0;
+}
+
+.title {
+  margin-left: 50px;
 }

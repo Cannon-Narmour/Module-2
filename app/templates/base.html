@@ -1,11 +1,12 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{%static "styles.css"%}" />
+    <link rel="stylesheet" href="{% static "styles.css" %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,26 +17,19 @@
   </head>
   <body>
     <nav>
-      <img
-        class="logo"
-        src="{% static 'basecampbwlogo.png' %}"
-        alt="Base Camp Logo"
-      />
+      <a href="..">
+        <img
+          class="logo"
+          src="{% static 'basecampbwlogo.png' %}"
+          alt="Base Camp Logo"
+        />
+      </a>
       <img
         class="everest"
         src="{% static 'everest.jpg' %}"
         alt="Base Camp Logo"
       />
     </nav>
-    <h1 class="indextitle">Leadership Teams</h1>
-    <div class="outer">
-      <div class="team_list">
-        {%for team in teams%}
-        <ul id="list">
-          <li><a href="/{{team}}/">{{team.title}}</a></li>
-        </ul>
-        {%endfor%}
-      </div>
-    </div>
+    {%block content%} {% endblock content%}
   </body>
 </html>
